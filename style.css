@@ -61,8 +61,8 @@ body {
 }
 
 .content__settings {
-    max-width: 640px;
-    width: 100%;
+    width: 640px;
+   /* width: 100%; */
     background: linear-gradient(180deg, #CEAAE4 0%, #E8D7F2 100%);
     display: flex;
     flex-direction: column;
@@ -74,7 +74,8 @@ body {
 }
 
 .settings {
-    width: 60%;
+    /* width: 60%; */
+    padding: 0px 30px;
 }
 
 .settings__close {
@@ -226,4 +227,7 @@ body {
 
 .black {
     background-color: black;
+}
+.auth__btn{
+    
 }
