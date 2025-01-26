@@ -118,12 +118,50 @@
 
                     </label>
                     <input type="button" value="send" class="auth__btn">
+
                     
                     
                 </form>
 
                 <form class="settings__form">
-                    <h3 class="settings__label">Настройки</h3>
+                    <h3 class="settings__label">settings</h3>
+                    <label for="select" class="label">
+                        font
+                        <select class ="settings_input" name="" id="select">
+                            <option selected value="StratosSkyeng">StratosSkyeng(default)</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="OpenSans">Open Sans</option>
+                        </select>
+                    </label>
+                    <label for="font_size" class="label">
+                        font size:
+                        <input type="number" name="" id="font_size" class = "settings_input" min="16" max="32" >
+                        px
+                    </label>
+                    <label for="font_color" class="label">
+                        color:
+                        <input type="color" name="" id="font_color">
+                    </label>
+                    <label for="input__range" class="label">
+                        interval:
+                        <input type="range" name="" id="input__range" class = "settings_input" min = "0" max = "300" step="10" value="150">
+
+                    </label>
+                    <div class="label">
+                        font color:
+                        <label for="" class="background_settings-form">
+                            <input type="radio" name="color" id="">
+                        </label>
+                        <label for="" class="background_settings-form">
+                            <input type="radio" name="color" id="">
+                        </label>
+                        <label for="" class="background_settings-form">
+                            <input type="radio" name="color" id="">
+                        </label>
+                        <label for="" class="background_settings-form">
+                            <input type="radio" name="color" id="">
+                        </label>
+                    </div>
                     
                 </form>
 
