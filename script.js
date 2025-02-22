@@ -8,13 +8,18 @@ const settingsElement = rootElement.querySelector(".settings");
 const colorInput = rootElement.querySelector(".settings__font-color");
 const settingsIntervalInput = rootElement.querySelector(".settings__interval");
 const fontChangeSelect = rootElement.querySelector('.settings__font-change');
-form.addEventListener("change", (event) => {
-    event.preventDefault()
-    rootElement.style.fontFamily = `${fontChangeSelect.value}, sans-serif`
-    rootElement.style.fontSize = `${fontSize.value}px`
-    rootElement.style.color = colorInput.value
-})
+const texts = rootElement.querySelectorAll(".text")
 
+form.addEventListener("change", (event) => {
+    event.preventDefault();
+    rootElement.style.fontFamily = `${fontChangeSelect.value}, sans-serif`;
+    rootElement.style.fontSize = `${fontSize.value}px`;
+    rootElement.style.color = colorInput.value;
+    texts.forEach((item)=>{
+        item.style.lineHeight = settingsIntervalInput.value 
+    })
+
+})
 
 
 settingsCloseBtn.addEventListener('click', () => {
