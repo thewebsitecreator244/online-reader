@@ -9,6 +9,7 @@ const colorInput = rootElement.querySelector(".settings__font-color");
 const settingsIntervalInput = rootElement.querySelector(".settings__interval");
 const fontChangeSelect = rootElement.querySelector('.settings__font-change');
 const texts = rootElement.querySelectorAll(".text")
+const radios = rootElement.querySelectorAll(".settings__back-color")
 
 form.addEventListener("change", (event) => {
     event.preventDefault();
@@ -17,6 +18,11 @@ form.addEventListener("change", (event) => {
     rootElement.style.color = colorInput.value;
     texts.forEach((item)=>{
         item.style.lineHeight = settingsIntervalInput.value 
+    })
+    radios.forEach((item)=>{
+        if(item.checked){
+            rootElement.style.backgroundColor = item.value
+        }
     })
 
 })
